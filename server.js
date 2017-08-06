@@ -38,6 +38,7 @@ function createTemplate(data){
             <title>
                 SSG | ${title}
             </title>
+            <link href="/ui/style.css" rel="stylesheet" />
             <meta name = "viewport" content="width=dance-width intital-scale=1"/>
         </head>
         <body>
