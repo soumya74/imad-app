@@ -23,4 +23,6 @@ body {
 .container {
     font-family : sans-serif;
     font-size : 100%;
+    color : gray;
+    max-width : 800px;
 }
