@@ -9,9 +9,61 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function(req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
+var articles = {
+  'article-one' : {
+    title : 'Article-One',
+    date : '4th August',
+    place : 'Jal Vayu Bihar, Noida',
+  }, 
+  'article-two' : {
+    title : 'Article-Two',
+    date : '5th August',
+    place : 'Jal Vayu Bihar, Noida',      
+  },
+  'article-three' : {
+    title : 'Article-Three',
+    date : '6th August',
+    place : 'Jal Vayu Bihar, Noida',      
+  },
+};
+
+function createTemplate(data){
+    var title = data.title;
+    var date = data.date;
+    var place = data.place;
+    var htmlTemplate = `
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                SSG | ${title}
+            </title>
+            <meta name = "viewport" content="width=dance-width intital-scale=1"/>
+        </head>
+        <body>
+            <div class="container">
+                <div>
+                    <a href="/">Home</a>
+                </div>
+                <hr/>
+                <h1>
+                    ${title}
+                </h1>
+                <p>
+                    Date : ${date}
+                    <br/>
+                    Place : ${place}<br/>
+                </p>
+                <p>
+                    This is ${title}.
+                </p>
+            </div>
+        </body>
+    </html>
+    `
+   return htmlTemplate;
+}
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
@@ -21,6 +73,18 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+app.get('/article-one', function(req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+});
+
+app.get('/article-two', function(req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+});
+
+app.get('/:articleName', function(req, res) {
+    var articleName = req.params.articleName;
+    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+});
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
