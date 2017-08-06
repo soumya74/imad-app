@@ -47,16 +47,20 @@ function createTemplate(data){
                     <a href="/">Home</a>
                 </div>
                 <hr/>
-                <h1>
+                <p>
                     ${title}
-                </h1>
+                </p>
                 <p>
                     Date : ${date}
                     <br/>
                     Place : ${place}<br/>
                 </p>
                 <p>
-                    This is ${title}.
+                    This is ${title}.This is ${title}.This is ${title}.This is ${title}.This is ${title}.
+                    This is ${title}.This is ${title}.This is ${title}.This is ${title}.This is ${title}.
+                    This is ${title}.This is ${title}.This is ${title}.This is ${title}.This is ${title}.
+                    This is ${title}.This is ${title}.This is ${title}.This is ${title}.This is ${title}.
+                    This is ${title}.This is ${title}.This is ${title}.This is ${title}.This is ${title}.
                 </p>
             </div>
         </body>
