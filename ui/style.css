@@ -25,4 +25,5 @@ body {
     font-size : 100%;
     color : gray;
     max-width : 800px;
+    padding-top : 60px;
 }
