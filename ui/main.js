@@ -7,8 +7,7 @@ var ul = document.getElementById("ulNameList");
 
 submit_btn.onclick = function(){
     var nameValue = nameInput.value;
-    //nameList.push(nameValue);
-    nameList=["name1", "name2", "name3"];
+    nameList.push(nameValue);
     
     for(var i=0;i<nameList.length; i++)
     {
