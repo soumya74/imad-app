@@ -14,7 +14,7 @@ submit_btn.onclick = function(){
     {
         list+="<li>"+nameList[i]+"</li>";
     }
-    ul.innerHTML(list);
+    ul.innerHTML = list;
 };
 
 
