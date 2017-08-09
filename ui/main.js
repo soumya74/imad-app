@@ -1,4 +1,3 @@
-console.log('Loaded!');
 
 var list='';
 var nameList = [];
