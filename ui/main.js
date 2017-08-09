@@ -2,9 +2,9 @@ console.log('Loaded!');
 
 var list='';
 var nameList = [];
-var nameInput = document.GetElementbyId("name");
-var submit_btn = document.GetElementbyId("submit_btn");
-var ul = document.GetElementbyId("ulNameList");
+//var nameInput = document.GetElementbyId("name");
+//var submit_btn = document.GetElementbyId("submit_btn");
+//var ul = document.GetElementbyId("ulNameList");
 
 /*submit_btn.onclick = function(){
     var nameValue = nameInput.value;
