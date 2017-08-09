@@ -1,11 +1,11 @@
 
-//var list='';
-//var nameList = [];
-//var nameInput = document.GetElementbyId("name");
-//var submit_btn = document.GetElementbyId("submit_btn");
-//var ul = document.GetElementbyId("ulNameList");
+var list='';
+var nameList = [];
+var nameInput = document.GetElementbyId("name");
+var submit_btn = document.GetElementbyId("submit_btn");
+var ul = document.GetElementbyId("ulNameList");
 
-/*submit_btn.onclick = function(){
+submit_btn.onclick = function(){
     var nameValue = nameInput.value;
     //nameList.push(nameValue);
     nameList=["name1", "name2", "name3"];
@@ -15,6 +15,6 @@
         list+="<li>"+nameList[i]+"</li>";
     }
     ul.innerHTML(list);
-};*/
+};
 
 
