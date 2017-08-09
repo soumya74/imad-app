@@ -1,6 +1,6 @@
 
-var list='';
-var nameList = [];
+//var list='';
+//var nameList = [];
 //var nameInput = document.GetElementbyId("name");
 //var submit_btn = document.GetElementbyId("submit_btn");
 //var ul = document.GetElementbyId("ulNameList");
