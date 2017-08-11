@@ -23,7 +23,7 @@ submit_btn.onclick = function(){
     
     var nameInput = document.getElementById("name");
     var nameValue = nameInput.value;
-    request.open('GET','http://soumya74.imad.hasura-app.io/submit-name?name=' + nameValue);
+    request.open('GET','http://soumya74.imad.hasura-app.io/submit-name?name=' + nameValue, true);
     request.send(null);
 };
 
