@@ -7,7 +7,7 @@ submit_btn.onclick = function(){
     var list='';
     var request = new XMLHttpRequest();
 
-    request.onreadystatechange() = function()
+    request.onreadystatechange = function()
     {
       if(request.readyState===XMLHttp.DONE && request.status===200)
       {
