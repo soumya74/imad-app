@@ -9,7 +9,7 @@ submit_btn.onclick = function(){
 
     request.onreadystatechange = function()
     {
-      if(request.readyState===XMLHttp.DONE && request.status===200)
+      if(request.readyState===XMLHttpRequest.DONE && request.status===200)
       {
           var names = request.responseText;
           names= JSON.parsify(names);
