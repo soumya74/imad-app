@@ -21,7 +21,7 @@ submit_btn.onclick = function(){
               ul.innerHTML = list;
           }
       }
-    }
+    };
     
     var nameInput = document.getElementById("name");
     var nameValue = nameInput.value;
